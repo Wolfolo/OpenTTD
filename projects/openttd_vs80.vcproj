@@ -1423,6 +1423,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\..\src\newgrf_roadtype.h"
+				>
+			</File>
+			<File
 				RelativePath=".\..\src\newgrf_sound.h"
 				>
 			</File>
@@ -1540,6 +1544,10 @@
 			</File>
 			<File
 				RelativePath=".\..\src\rev.h"
+				>
+			</File>
+			<File
+				RelativePath=".\..\src\road.h"
 				>
 			</File>
 			<File
@@ -2899,6 +2907,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\..\src\table\roadtypes.h"
+				>
+			</File>
+			<File
 				RelativePath=".\..\src\..\objs\settings\table\settings.h"
 				>
 			</File>
@@ -4060,6 +4072,10 @@
 			</File>
 			<File
 				RelativePath=".\..\src\newgrf_railtype.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\..\src\newgrf_roadtype.cpp"
 				>
 			</File>
 			<File
