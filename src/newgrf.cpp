@@ -6215,7 +6215,8 @@ static uint32 GetParamVal(byte param, uint32 *cond_val)
 				/* Supported in Action 0x07 and 0x09, not 0x0D */
 				return 0;
 			} else {
-				uint32 param_val = _ttdpatch_flags[*cond_val / 0x20];
+				uint32 index = *cond_val / 0x20;
+				uint32 param_val = index < lengthof(_ttdpatch_flags) ? _ttdpatch_flags[index] : 0;
 				*cond_val %= 0x20;
 				return param_val;
 			}
@@ -8213,6 +8214,8 @@ static void InitializeGRFSpecial()
 	                   |       ((_settings_game.vehicle.dynamic_engines ? 1 : 0) << 0x18)  // dynamic engines
 	                   |                                                      (1 << 0x1E)  // variablerunningcosts
 	                   |                                                      (1 << 0x1F); // any switch is on
+
+	_ttdpatch_flags[4] =                                                      (1 << 0x00); // larger persistent storage
 }
 
 /** Reset and clear all NewGRF stations */
